@@ -57,9 +57,10 @@
 		td{
 			padding:0;
 		}
-		a{
-			text-decoration:none;
-		}
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
 		.pull-right{
 			float:right;
 		}
@@ -67,7 +68,6 @@
 			float:left;
 		}
 		.body{
-			line-height:150%;
 			background:#EAE4E3 url(http://res.cloudinary.com/ddbeh95n3/image/upload/c_scale,w_428/v1397716503/bg_w_lm0wfx.jpg) no-repeat top left;
 		}
 		.newsletter{
@@ -75,31 +75,30 @@
 			padding:20px;
 			background-color:rgba(127, 14, 71, .95);
 		}
-		.side-content{
-			background-color:#660738;
-			height:240px;
+    .content{
+      height:200px;
+      max-height:200px;
 			padding:20px;
 			margin-bottom:20px;
+    }
+		.side-content{
+			background-color:#660738;
+      width:175px;
 		}
 		.main-content{
 			background-color:#9F4A75;
-			height:240px;
-			max-height:240px;
-			padding:20px;
-			margin-bottom:20px;
 		}
 		.main-column{
-			height:290px;
-			width:700px;
+      width:525px;
 		}
-		.content-btn a{
+		.learnmore a{
 			display:block;
 			color:#FBB03B;
-			font-size:18px;
+			font-size:13px;
 			font-weight:bold;
 			font-style:italic;
 			font-family:arial;
-			margin-right:40px;
+			margin-right:10px;
 			margin-top:23px;
 		}
 		.footer{
@@ -120,61 +119,56 @@
 			padding-right:200px;
 			padding-bottom:50px;
 		}
-		.header{
-			margin-top:25px;
-      margin-bottom: 5px;
-			display:block;
+    .logo{
+			margin-top:10px;
+      margin-left:-6px;
       width: 230px;
 		}
-		.headline{
-			font-family:"Trebuchet MS";
-			color:white;
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 130%;
-		}
 		.headline-top{
-			font-size:19px;
+			font-size:18px;
 			font-family:"Trebuchet MS";
 			color:white;
 			line-height:120%;
 		}
+		.headline{
+			font-family:"Trebuchet MS";
+			color:white;
+      font-size: 21px;
+      line-height: 130%;
+		}
 		.subtext{
 			font-family:arial;
 			color:#E2DFDE;
-			font-size:16px;
-			line-height:180%;
+			font-size:13px;
+			line-height:150%;
 		}
 		.day{
 			color:white;
 			font-family:"Trebuchet MS";
-			font-size:32px;
+			font-size:27px;
 			margin-top:20px;
 		}
 		.time{
 			color:white;
 			font-family:"Trebuchet MS";
-			font-size:20px;
+			font-size:16px;
 			margin-bottom:11px;
 		}
 		.register a{
 			display:block;
 			color:white;
 			background-color:#9F4A75;
-			font-size:15px;
+			font-size:13px;
 			padding-top:7px;
 			padding-bottom:7px;
-			padding-left:25px;
-			padding-right:30px;
-			width:150px;
-			margin-left:29px;
+			width:160px;
 			font-family:arial;
-			margin-top:50px;
-			letter-spacing:2px;
+			letter-spacing:1.5px;
+      text-align:center;
 		}
 		.content-img img{
-			width:180px;
-			margin:15px;
+			height:120px;
+			margin-left:12px;
 		}
 		.cusion15{
 			padding-bottom:15px;
@@ -185,13 +179,24 @@
 		.full-width{
 			width:100%;
 		}
+    .fullheight{
+      height:100%;
+    }
 		.date{
-			font-size:19px;
+			font-size:15px;
 			padding-bottom:11px;
 			padding-top:11px;
 			color:white;
 			font-family:arial;
 		}
+    .browser{
+			font-family:arial;
+			font-size:15px;
+      color:lightgrey;
+      opacity:.7;
+      display:block;
+      padding-bottom:4px;
+    }
 </style></head>
 <body class="body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 <center>
@@ -202,8 +207,9 @@
           <table class="full-width">
             <tr><td>
               <a class="header" href="https://www.wearewatermark.org">
-                <img src="http://res.cloudinary.com/ddbeh95n3/image/upload/v1397795392/Watermark_logo_pvxs7l.png">
+                <img class="logo" src="http://res.cloudinary.com/ddbeh95n3/image/upload/v1397795392/Watermark_logo_pvxs7l.png">
               </a>
+              <a class="browser" href="*|ARCHIVE|*">View this email in your Browser</a>
             </td><td align="right" valign="bottom">
               <a href="https://www.facebook.com/wearewatermark">
                 <img class="social" src="http://res.cloudinary.com/ddbeh95n3/image/upload/v1397713783/facebook_s2oehy.png">
@@ -228,7 +234,7 @@
             </td></tr>
 
             <tr mc:repeatable="main_event"><td class="main-column">
-              <div class="main-content">
+              <div class="main-content content">
                 <div class="headline-top" mc:edit="newsletter_preheadline">
                   WEBINAR SERIES
                 </div>
@@ -239,7 +245,7 @@
                   <div class="subtext" mc:edit="newsletter_text">
                     How is your inner critic holding you back at work? Tara Sophia Mohr, expert on women’s leadership and well-be- ing, teaches us how to silence our inner critic to access and convey greater confidence in the workplace.
                   </div>
-                  <div class="content-btn pull-right" mc:edit="newsletter_link">
+                  <div class="learnmore pull-right" mc:edit="newsletter_link">
                     <a href="http://google.com">
                       Learn more
                     </a>
@@ -251,16 +257,19 @@
                 </td></tr></table>
               </div>
             </td><td>
-              <div class="side-content">
-                <div class="day" mc:edit="newsletter_event_date">January 8</div>
-                <hr>
-                <div class="time" mc:edit="newsletter_event_time">10:00 am — 11:00 am</div>
-                <div class="time" mc:edit="newsletter_event_location">Webex</div>
-                <div class="register" mc:edit="newsletter_register">
-                  <a href="http://google.com">
-                    REGISTER NOW
-                  </a>
-                </div>
+              <div class="side-content content">
+                <table class="fullheight"><tr><td valign="top">
+                  <div class="day" mc:edit="newsletter_event_date">January 8</div>
+                  <hr>
+                  <div class="time" mc:edit="newsletter_event_time">10:00 am — 11:00 am</div>
+                  <div class="time" mc:edit="newsletter_event_location">Webex</div>
+                </td></tr><tr><td valign="bottom" align="center">
+                  <div class="register" mc:edit="newsletter_register">
+                    <a href="http://google.com">
+                      REGISTER NOW
+                    </a>
+                  </div>
+                </td></tr></table>
               </div>
             </td></tr>
 
