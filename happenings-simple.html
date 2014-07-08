@@ -53,14 +53,11 @@
       font-family: arial;
     }
     .learnmore{
-      display: block;
       color: #FBB03B;
       font-size: 13px;
       font-weight: bold;
       font-style: italic;
       font-family: arial;
-      margin-right: 10px;
-      margin-top: 8px;
     }
 	/*
 	@tab Page
@@ -157,7 +154,7 @@
 			/*@editable*/font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;
 			/*@editable*/font-size:10px;
 			/*@editable*/line-height:125%;
-			/*@editable*/text-align:left;
+			/*@editable*/text-align:right;
 		}
 	/*
 	@tab Header
@@ -348,11 +345,11 @@
             <td align="center" valign="top">
               <table border="0" cellpadding="0" cellspacing="0" width="600">
                 <tr>
-                  <td valign="top" class="preheaderContent" style="padding-right:20px;" mc:edit="std_preheader_content">
-                  </td>
                   <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                  <td valign="top" width="200" class="preheaderContent" mc:edit="std_preheader_links">Email not displaying correctly?<br>
-                    <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.</td>
+                  <td valign="top" width=100% class="preheaderContent" mc:edit="std_preheader_links">
+                    Email not displaying correctly?
+                    <a href="*|ARCHIVE|*" target="_blank">View it in your browser.</a>
+                  </td>
                   <!-- *|END:IF|* -->
                 </tr>
               </table>
@@ -431,9 +428,9 @@
                           </table>
                         </td>
                         <td valign="top" width="100%" style="padding-right:20px; padding-left:10px;">
-                          <div class="bodyContent" mc:edit="body_content"><h2 class="null">South Bay: Women Like Us (WLU)<br>
+                          <div class="bodyContent" mc:edit="body_content"><h2 class="null" style="font-weight:bold; font-size:19px;">South Bay: Women Like Us (WLU)<br>
                               for Watermark Members</h2>
-                            Pick up a Very Frequent Visitor card next time you&#39;re in the shop. You&#39;ll get a free coffee for every nine drinks you purchase. Our regulars have been asking for a coffee club, and we&#39;re happy to finally offer one!&nbsp; <strong><div class="learnmore" mc:edit="newsletter_link">Learn more</div></strong><br>
+                            Pick up a Very Frequent Visitor card next time you&#39;re in the shop. You&#39;ll get a free coffee for every nine drinks you purchase. Our regulars have been asking for a coffee club, and we&#39;re happy to finally offer one!&nbsp; <strong><span class="learnmore" mc:edit="newsletter_link">Learn more</span></strong><br>
                             &nbsp;
                             <h2 class="null">July 25, 2014, 7:30 pm to 10 pm</h2>
                             Oracle Conference Center<br>
